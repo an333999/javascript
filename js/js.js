@@ -23,6 +23,6 @@ let bills = [275,20,320,49];
 bills.forEach (function (value ,position ) {
     let tip1 = (( value*20 )/100);
     let tip2 =(( value*15 )/100);
-    (value>=50 && value<=300) ? console.log(`The bill is: ${value} tips for the waiter: ${tip1} total value to pay: ${value+tip1}`) :  console.log(`The bill is: ${value} tips for the waiter: ${tip2} total value to pay: ${value+tip2}`)
+    (value>=50 && value<=300) ? console.log(`${position+1}. The bill is: ${value} tips for the waiter: ${tip1} total value to pay: ${value+tip1}`) :  console.log(`${position+1}. The bill is: ${value} tips for the waiter: ${tip2} total value to pay: ${value+tip2}`)
 });
 
